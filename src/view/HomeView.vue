@@ -1,7 +1,7 @@
 <template>
-  <div className="flex h-screen w-full color">
-    <div className="m-auto">
-      <h1 className="text-center text-6xl  text-white font mb-4">
+  <div class="flex h-screen w-full color">
+    <div class="m-auto">
+      <h1 class="text-center text-6xl  text-white font mb-4">
         Guardian Watcher
       </h1>
       <Image image-path="../../src/assets/logo.png" image-width="80" image-height="0" class="m-auto"/>

@@ -1,5 +1,7 @@
 <template>
-  <section class="wrapper">
+    <div class="flex h-screen w-full color back">
+        <div class="m-auto">
+            <section class="wrapper">
     <div class="icon-wrapper">
       <svg class="ghost-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.5 147.07">
         <g class="back-panels">
@@ -83,22 +85,35 @@
 
     </div>
   </section>
-
-
+            <h1 class="text-center text-6xl text-black text-white font mb-4">
+                LOADING DATA ...
+            </h1>
+        </div>
+    </div>
 
 </template>
 
 <script>
 export default {
-  name: "Loading"
+  name: "Loading",
+    mounted() {
+      console.log("loading page")
+    }
 }
 </script>
 
 <style scoped>
 
+.back{
+    background: url("src/assets/loadingData.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
 .wrapper {
-  height: 40vh;
-  width: 40vw;
+  height: 30vh;
+  width: 30vw;
   color: #fff;
   text-align: center;
   -webkit-backface-visibility: hidden;
@@ -109,7 +124,7 @@ export default {
   left: 50%;
   top: 50%;
   height: auto;
-  width: 50px;
+  width: 70px;
   animation: hover;
   animation-duration: 4s;
   animation-delay: 0;
