@@ -5,7 +5,15 @@ export default createRouter({
     routes:[
         {
             path:'/',
+            name:'home',
             component: () => import('../view/HomeView.vue')
+        },
+        {
+            path:"/Offline",
+            name:'Offline',
+            component:() => import('../view/NoNetworkView.vue'),
         }
+
     ]
 });
+

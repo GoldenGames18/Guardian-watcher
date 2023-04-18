@@ -69,7 +69,7 @@ button[type="submit"] {
     padding-left: 1rem;
 }
 .error-text {
-    color: #f03539;
+    color: #e8615a ;
     justify-content: center;
 }
 
@@ -78,7 +78,7 @@ button[type="submit"] {
     letter-spacing: 0.035em;
     text-shadow: -9px -6px 40px currentColor;
     font-weight: 600;
-    border: 1px solid #e8615a;
+    border: 1px solid darkred;
 }
 
 </style>
