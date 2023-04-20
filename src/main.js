@@ -7,6 +7,7 @@ import axios from "axios"
 axios.defaults.baseURL = "https://www.bungie.net/Platform";
 axios.defaults.headers.common["X-API-Key"] = import.meta.env.VITE_API_KEY;
 
+
 createApp(App)
     .use(router)
     .mount("#app");

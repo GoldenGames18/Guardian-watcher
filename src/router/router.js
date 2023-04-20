@@ -9,9 +9,9 @@ export default createRouter({
             component: () => import('../view/HomeView.vue')
         },
         {
-            path:"/Offline",
-            name:'Offline',
-            component:() => import('../view/NoNetworkView.vue'),
+            path:"/Register",
+            name:'Register',
+            component:() => import('../view/RegisterView.vue'),
         }
 
     ]
