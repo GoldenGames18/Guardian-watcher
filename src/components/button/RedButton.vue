@@ -1,31 +1,27 @@
 <template>
-    <button  class="btn" type="">{{ buttonText }}</button>
+    <button :disabled="disabledButton" class="btn" :type="buttonType">{{ buttonText }}</button>
 </template>
 
 <script>
 export default {
     name: "RedButton",
-    props:["buttonText","buttonType"]
+    props:["buttonText","buttonType", "disabledButton"]
 }
 </script>
 
 <style scoped>
 
 button{
-
     color: white;
-    cursor: pointer;
     font-weight: bold;
     height: 3rem;
     width: 100%;
     text-transform: uppercase;
 }
 
-.btn{
+button{
     position: relative;
     display: inline-flex;
-    -webkit-user-select: none;
-    user-select: none;
     transition: .25s;
     align-items: center;
     justify-content: center;
@@ -36,7 +32,7 @@ button{
     line-height: 1.5rem;
 }
 
-.btn:after{
+button:after{
     position: absolute;
     content: "";
     display: block;
@@ -48,14 +44,17 @@ button{
     transition: .25s;
 }
 
-.btn:hover:after{
+button:not([disabled]):hover:after{
     top: -5px;
     left: -5px;
     right: -5px;
     bottom: -5px;
 }
 
-.btn:hover{
+button:not([disabled]):hover{
     background: #fa5050;
+}
+button:disabled{
+    cursor: not-allowed! important;
 }
 </style>

@@ -4,7 +4,7 @@
       <GuardianTitle text-title="Guardian Watcher"/>
       <Image image-path="../../src/assets/logo.png" image-width="80" image-height="0" class="m-auto"/>
        <div class="pt-5">
-         <RedButton button-text="Register Now" @click="redirection()"/>
+         <RedButton button-text="Register Now" @click="redirection()" :disabled-button="false"/>
        </div>
     </div>
   </div>
