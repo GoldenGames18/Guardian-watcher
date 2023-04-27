@@ -1,11 +1,11 @@
 <template>
-  <div className="flex h-screen w-full color">
-    <div className="m-auto">
-      <h1 className="text-center text-6xl  text-white font mb-4">
-        Guardian Watcher
-      </h1>
+  <div class="flex h-screen w-full back">
+    <div class="m-auto">
+      <GuardianTitle text-title="Guardian Watcher"/>
       <Image image-path="../../src/assets/logo.png" image-width="80" image-height="0" class="m-auto"/>
-      <form-guardian/>
+       <div class="pt-5">
+         <RedButton button-text="Register Now" @click="redirection()" :disabled-button="false"/>
+       </div>
     </div>
   </div>
 </template>
@@ -15,25 +15,28 @@ import Image from "../components/Image.vue";
 import axios from "axios";
 import Loading from "../components/Loading.vue";
 import FormGuardian from "../components/form/FormGuardian.vue";
+import Button from "../components/button/RedButton.vue";
+import PinkButton from "../components/button/RedButton.vue";
+import RedButton from "../components/button/RedButton.vue";
+import router from "../router/router.js";
+import GuardianTitle from "../components/Title/GuardianTitle.vue";
 
 export default {
   name: "HomePage",
-  components: {FormGuardian, Loading, Image},
+  components: {GuardianTitle, RedButton, FormGuardian, Image},
+  methods:{
+      redirection(){
+          router.push({name: "Register"})
+      }
+  }
 }
 </script>
 
 <style scoped>
-@import url('https://fonts.cdnfonts.com/css/cyberthrone');
+.back {
+    background-size: cover;
+    background: url("src/assets/background.webp") center;
+    overflow: hidden;
 
-.font {
-  font-family: 'Cyberthrone', sans-serif;
 }
-
-.color {
-  background: url("src/assets/background.png");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
 </style>
