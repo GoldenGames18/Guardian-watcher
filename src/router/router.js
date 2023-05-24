@@ -14,9 +14,9 @@ export default createRouter({
             component:() => import('../view/RegisterView.vue'),
         },
         {
-            path:"/Loading",
-            name:'Loading',
-            component:() => import('../view/LoadingView.vue'),
+            path:"/Guardian",
+            name:'Guardian',
+            component:() => import('../view/GuardianView.vue'),
         },
 
     ]

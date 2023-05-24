@@ -16,7 +16,7 @@
           </g>
           <g>
             <polygon points="88.27 20.91 116.76 21.33 124.78 29.59 125.45 58.51 103.22 42.67 88.27 20.91" fill="#ededed" stroke="#e0e0e0" stroke-miterlimit="10"/>
-            <polygon points="116.76 21.33 119.67 21.37 124.82 26.68 124.78 29.61 116.76 21.33" fill="#9c9c9c" stroke="#9c9c9c" stroke-miterlimit="10"/>
+            <polygon points="116.76 21.33 119.67 21.37 124.82 26.68 124.78 29.61 116.76 21.33" fill="#FFA400FF" stroke="#FFA400FF" stroke-miterlimit="10"/>
           </g>
           <g>
             <g>
@@ -27,7 +27,7 @@
           </g>
           <g>
             <polygon points="58.73 126.06 30.24 125.64 22.22 117.39 21.55 88.46 43.78 104.3 58.73 126.06" fill="#ededed" stroke="#e0e0e0" stroke-miterlimit="10"/>
-            <polygon points="30.24 125.64 27.33 125.6 22.18 120.3 22.22 117.36 30.24 125.64" fill="#9c9c9c" stroke="#9c9c9c" stroke-miterlimit="10"/>
+            <polygon points="30.24 125.64 27.33 125.6 22.18 120.3 22.22 117.36 30.24 125.64" fill="#FFA400FF" stroke="#FFA400FF" stroke-miterlimit="10"/>
           </g>
         </g>
         <circle cx="75.06" cy="73.97" r="32.75" fill="#444"/>
@@ -46,14 +46,14 @@
             <path d="M154.28,67.5l26.44,31.19-18.38,20-17.19-16.29a3,3,0,0,1-.94-2.21L144,78.86Z" transform="translate(-69.5 -65.85)" fill="#f2f2f2" stroke="#e0e0e0" stroke-miterlimit="10"/>
             <polygon points="37.7 32.84 1.34 62.9 5.34 69.02 39.47 68.9 56.08 52.87 37.7 32.84" fill="#ededed" stroke="#e0e0e0" stroke-miterlimit="10"/>
             <polygon points="111.3 32.84 147.66 62.9 143.66 69.02 109.53 68.9 92.92 52.87 111.3 32.84" fill="#ededed" stroke="#e0e0e0" stroke-miterlimit="10"/>
-            <path d="M143.14,78.07,134,68a1,1,0,0,1,.74-1.67H153a1,1,0,0,1,.74,1.67l-9.11,10A1,1,0,0,1,143.14,78.07Z" transform="translate(-69.5 -65.85)" fill="#9c9c9c" stroke="#9c9c9c" stroke-miterlimit="10"/>
+            <path d="M143.14,78.07,134,68a1,1,0,0,1,.74-1.67H153a1,1,0,0,1,.74,1.67l-9.11,10A1,1,0,0,1,143.14,78.07Z" transform="translate(-69.5 -65.85)" fill="#FFA400FF" stroke="#FFA400FF" stroke-miterlimit="10"/>
           </g>
           <g>
             <polygon points="64.14 145.42 37.7 114.24 56.08 94.2 74.22 111.39 74.18 134.12 64.14 145.42" fill="#f2f2f2" stroke="#e0e0e0" stroke-miterlimit="10"/>
             <path d="M154.28,211.27l26.44-31.19-18.38-20-17.19,16.29a3,3,0,0,0-.94,2.21L144,199.91Z" transform="translate(-69.5 -65.85)" fill="#d6d6d6" stroke="#e0e0e0" stroke-miterlimit="10"/>
             <polygon points="37.7 114.24 1.34 84.17 5.34 78.05 39.47 78.17 56.08 94.2 37.7 114.24" fill="#ededed" stroke="#e0e0e0" stroke-miterlimit="10"/>
             <polygon points="111.3 114.24 147.66 84.17 143.66 78.05 109.53 78.17 92.92 94.2 111.3 114.24" fill="#ededed" stroke="#e0e0e0" stroke-miterlimit="10"/>
-            <path d="M143.33,200.7l-9.11,10a1,1,0,0,0,.74,1.67h18.23a1,1,0,0,0,.74-1.67l-9.11-10A1,1,0,0,0,143.33,200.7Z" transform="translate(-69.5 -65.85)" fill="#9c9c9c" stroke="#9c9c9c" stroke-miterlimit="10"/>
+            <path d="M143.33,200.7l-9.11,10a1,1,0,0,0,.74,1.67h18.23a1,1,0,0,0,.74-1.67l-9.11-10A1,1,0,0,0,143.33,200.7Z" transform="translate(-69.5 -65.85)" fill="#FFA400FF" stroke="#FFA400FF" stroke-miterlimit="10"/>
           </g>
         </g>
         <g>
@@ -97,11 +97,12 @@ export default {
 <style scoped>
 
 .wrapper {
-  height: 40vh;
-  width: 40vw;
+  height: 30vh;
+  width: 30vw;
   color: #fff;
   text-align: center;
   -webkit-backface-visibility: hidden;
+
 }
 
 .ghost-icon {
@@ -109,7 +110,7 @@ export default {
   left: 50%;
   top: 50%;
   height: auto;
-  width: 50px;
+  width: 90px;
   animation: hover;
   animation-duration: 4s;
   animation-delay: 0;

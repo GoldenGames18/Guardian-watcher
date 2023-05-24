@@ -53,7 +53,7 @@ export default {
                 result = await this.fetchConnexion()
               if (result !== null){
                 console.log(result);
-                await router.push({name: "Loading"})
+                await router.push({name: "Guardian"})
               }
             }
             this.disabled = false;
