@@ -5,14 +5,19 @@ export default createRouter({
     routes:[
         {
             path:'/',
-            name:'home',
-            component: () => import('../view/HomeView.vue')
+            name:'Home',
+            component: () => import('../view/HomeView.vue'),
         },
         {
             path:"/Register",
             name:'Register',
             component:() => import('../view/RegisterView.vue'),
-        }
+        },
+        {
+            path:"/Loading",
+            name:'Loading',
+            component:() => import('../view/LoadingView.vue'),
+        },
 
     ]
 });
